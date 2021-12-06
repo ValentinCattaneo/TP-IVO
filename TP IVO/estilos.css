@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.nav {
+position: absolute;
+z-index: 1;
+}
+.video-presentacion {
+    position: relative;
+}
+.pizza-main-content {
+    background-image: url("./imagenes/pizza-main-content.jpg");
+    background-attachment: fixed;
+    background-position: left 250px bottom 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+    float: right;
+    }
+.text h2  {
+    text-align: center;
+    font-size: 3.5em;
+    padding-bottom: 1em;
+    color: rgb(189, 41, 41);
+    margin-top: 2em;
+}
+.text p  {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(160, 105, 3);
+    margin-top: 0.5em;
+}
+.fondo-blanco {
+    width: 100%;
+    height: 0;
+}
+
+.leña-main-content {
+    background: url("./imagenes/leña-quemandose.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+    float: left;
+}
+
+.text-dos h2{
+    text-align: center;
+    font-size: 3.5em;
+    padding-bottom: 1em;
+    color: rgb(189, 41, 41);
+    margin-top: 2em;
+}
+
+.text-dos p {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(160, 105, 3);
+    margin-top: 0.5em;
+}
+
+.img-separadora {
+    height: 200px;
+    width: 250px;
+    padding-left: 1em;
+    margin-left: 0.75em;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+form {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+footer {
+    background: black;
+    width: 100%;
+}
+.botones button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 1.7em;
+    padding: 0.5em;
+    color: white;
+    width: 100%;
+}
+.botones {
+    text-align: center;
+    padding-bottom: 1em;
+}
+.botones a button:hover {
+    color: rgb(100, 93, 93);
+}
+footer p {
+    color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+  }
+  
+  li a {
+    display: inline;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li {
+    text-align: center;
+    float: left;
+    padding: 0.5em;
+ 
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(26, 11, 11);
+    color: white;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px){
+    .img-separadora {
+      width: 180px;
+      height: 150px;
+    }
+  }
+  @media only screen and (min-width: 1200px){
+    .img-separadora {
+      width: 18%;
+      margin-left: 1.2em;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .img-separadora {
+      width: 350px;
+      padding: 0.05em;
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767px){
+    .img-separadora {
+      width: 350px;
+      padding: 0.5em;
+  }
+  .text-dos p {
+    font-size: 1.5em;
+  }
+  .text p {
+    font-size: 1.5em;
+  }
+}
+
+  @media only screen and (max-width: 575px){
+    .botones {
+      font-size: 10px;
+    }
+    .img-separadora {
+      display: block;
+      margin-left: 3.5em;
+      padding: 0.5em;
+    }
+    .text-dos h2 {
+      font-size: 3em;
+    }
+    .text-dos p {
+      font-size: 1.5em;
+      padding: 1em;
+    }
+    .text h2 {
+      font-size: 3m;
+    }
+    .text p {
+      font-size: 1.5em;
+      padding: 1em;
+    }
+    .pizza-main-content {
+      width: 0%;
+    }
+    .leña-main-content {
+      width: 0%;
+    }
+  }
+  
+ 
